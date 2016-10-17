@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" onclick="aa()" ondblclick="bb()" value="点我">
+<script language="javascript">
+    var isdb;
+    function aa(){
+        isdb=false;
+        window.setTimeout(cc, 500)
+        function cc(){
+            if(isdb!=false)
+                return;
+            alert("这是单击")
+        }
+    }
+    function bb(){
+        isdb=true;
+        location="../student.jsp";
+    }
+</script>
+</body>
+</html>
